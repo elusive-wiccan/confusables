@@ -6,17 +6,12 @@
 
 # Confusables
 
-This library allows you to easily remove confusables from a string, into normal english characters.
+This library handles removing confusable characters from strings, replacing them with more standardised counterparts.
 
-Try it out: https://confusables.netlify.com/
+## Note
 
-## Installation
-
-```
-yarn add confusables
-
-npm install confusables
-```
+The original package can be found [here](https://github.com/gc/confusables); this is a personal fork that fixes the automatic source generator
+from [kyranet's pull request](https://github.com/gc/confusables/pull/12), which allows me to update it whenever I feel like it.
 
 ## Usage
 
@@ -53,4 +48,4 @@ console.log(characters);
 
 > Confusable characters are those that may be confused with others (in some common UI fonts), such as the Latin letter "o" and the Greek letter omicron "ο". Fonts make a difference: for example, the Hebrew character "ס" looks confusingly similar to "o" in some fonts (such as Arial Hebrew), but not in others.
 
-> [Source](https://unicode.org/cldr/utility/confusables.jsp)
+> [Original source for gc/confusables](https://unicode.org/cldr/utility/confusables.jsp) > [Source used by scripts:generate](https://www.unicode.org/Public/security/latest/confusables.txt)

@@ -23,7 +23,7 @@
 		"watch": "yarn build -w",
 		"prepublishOnly": "yarn build",
 		"scripts:runner": "ts-node -P ./tsconfig.eslint.json",
-		"scripts:checknewchars": "yarn scripts:runner scripts/checkForNewChars"
+		"scripts:generate": "yarn scripts:runner scripts/generate"
 	},
 	"devDependencies": {
 		"@favware/eslint-config": "3.2.0",
